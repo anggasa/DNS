@@ -87,26 +87,18 @@ echo "unset HISTFILE" >> /etc/profile
 
 # info
 clear
-echo "Autoscript Include:" | tee log-install.txt
-echo "===========================================" | tee -a log-install.txt
+echo "============================================================="  | tee -a log-install.txt
+echo "Info SERVER" | tee log-install.txt
+echo "IP Server            : $MYIP"  | tee -a log-install.txt
+echo "Control Panel Port   : $MYIP:10000"  | tee -a log-install.txt
+echo "Timezone             : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "Fail2Ban             : [Enable]"  | tee -a log-install.txt
+echo "IPv6                 : [Disable]"  | tee -a log-install.txt
+echo "============================================================="  | tee -a log-install.txt
+echo "Silahkan Reboot Server Anda"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "axel, bmon, htop, iftop, mtr, rkhunter, nethogs: nethogs venet0"  | tee -a log-install.txt
+echo "Terimakasih :D"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Script"  | tee -a log-install.txt
-echo "------"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Fitur"  | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
-echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "Fail2Ban : [on]"  | tee -a log-install.txt
-echo "IPv6     : [off]"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Log Instalasi --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Terimakasih"  | tee -a log-install.txt
 echo "Angga Shaputra"  | tee -a log-install.txt
-echo "==========================================="  | tee -a log-install.txt
 cd
 rm -f /root/debian7.sh
